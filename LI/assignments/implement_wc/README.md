@@ -14,14 +14,16 @@ To understand and implement using basic system calls
 * Implement a word_count() function where you have to pass fd and 3 integer addresses(pass by refference). Int word_count (int fd, int *lines, int *words, int *bytes);
 * Word_count function will read from the fd and calculates lines, words and bytes, then stores into respective addresses passed (don’t print values inside function).
 * Main function will open the files in a loop and call word_count function depends upon number of files passed. Print values after calling functions in main.
-*     Eg: - ./word_count file1.txt file2.txt
-for(I = 0; I < 2; i++)
-{
-               . . fd = open(…);
-               word_count(fd, &lines, &words, &bytes);
-                print_values(…);
-. . }
-Print_total(…);
+      
+      Eg: - ./word_count file1.txt file2.txt  
+      for(I = 0; I < 2; i++)
+      {
+      	. . fd = open(…);
+        word_count(fd, &lines, &words, &bytes);
+      	print_values(…);
+      . . }
+      Print_total(…);
+
 * If options passed [ -l –w –c ] print only respective values.
 * Program should able to handle all possible error conditions.
 
